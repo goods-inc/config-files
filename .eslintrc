@@ -1,5 +1,7 @@
 {
-    "env": {"browser": true},
+    "env": {
+      "browser": true
+    },
     "rules":{
 /**
  * Strict mode

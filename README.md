@@ -11,3 +11,13 @@ SublimeLinter
 SublimeLinter-contrib-eslint
 
 ESLint-Formatter
+
+# envについて
+
+```
+"env": {
+  "browser": true, # デフォルト
+  "node": true, # nodeを使う場合
+  "es6": true # es6の記法を使う場合
+},
+```
