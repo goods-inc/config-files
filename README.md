@@ -1,3 +1,9 @@
+# インストール方法
+
+```
+curl -sSL git.io/goods-jsconfig | sh
+```
+
 #共通
 npm install -g eslint
 
