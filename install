@@ -20,7 +20,7 @@ echo "Start downloading ${files[@]} ..."
 for file in ${files[@]}
 do
   curl -sO "$URL/$file"
-  echo "Download $files"
+  echo "Download $file"
 done
 
 echo "Download fininshed!!"
