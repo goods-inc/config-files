@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 trap 'echo "Download failed :<"; exit 1' 1 2 3 15
 
@@ -16,6 +16,18 @@ logo='
             \|_________|
 
 '
+
+if [ ! -f "package.json" ]; then
+  print  "Run npm init. Ok?[Y/n] "
+  read ans
+  case $ans in
+    "n" | "N") exit 0 ;;
+    *) npm init
+  esac
+fi
+
+npm install --save-dev eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint
+
 echo "Start downloading ${files[@]} ..."
 for file in ${files[@]}
 do
